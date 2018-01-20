@@ -1,0 +1,2362 @@
+FORMAT: 1A
+HOST: http://greenscore.apiblueprint.org/
+
+# GreenScore
+
+GreenScore is a simple API allowing consumers to get greenScore of hotels.
+
+## Hotel API [/hotels]
+
+### Retrieve Hotel [GET]
+
++ Request (application/json)
+    + Body
+
+            {
+               "destination": ["Madrid","Barcelona"]
+               "checkIn": "2018/01/20",
+               "checkOut": "2018/01/31",
+               "roomType": ["1", "2", "family", "groups" ]
+              
+            }
+
++ Response 200 (application/json)
+
+[
+    {
+      "id": 1043290,
+      "key": "hotel:Barcelona_Universal_Hotel",
+      "href": "http://sandbox.hotelscombined.com/api/2.0/hotel?apiKey=7B5041D1-29A6-491F-B3E0-57CA5FCD53CA&sessionID=testsession1&destination=place%3ABarcelona&checkin=2018-06-13&checkout=2018-06-14&rooms=1&responseOptions=destination%2Ctoprates&hotel=hotel:Barcelona_Universal_Hotel",
+      "name": "Barcelona Universal Hotel",
+      "address": "Avda Paral.lel 76-80",
+      "latitude": 41.374959,
+      "longitude": 2.168335,
+      "distance": 1925,
+      "isWithinBoundary": true,
+      "starRating": 4,
+      "isSelfRated": false,
+      "lowestRate": 80.0,
+      "highestRate": 295.0,
+      "isGreatValue": false,
+      "numberOfProviders": 24,
+      "numberOfRates": 25,
+      "greenScore":3,
+      "rates": [
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 80.0,
+          "isCheapestRate": true,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 0,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.14462066.-263599127.8.EUR.664329986&source=201-0&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 80.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 1,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.13952284.-263598951.8.EUR.1998717347&source=201-1&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 89.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            4
+          ],
+          "availableRooms": null,
+          "providerIndex": 2,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.8409075.-263598938.17.EUR.1228931483&source=201-2&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 89.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            4
+          ],
+          "availableRooms": null,
+          "providerIndex": 3,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.38562085.-263598934.16.EUR.838551414&source=201-3&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 295.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            4
+          ],
+          "availableRooms": null,
+          "providerIndex": 4,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.6470752.-263598983.122.EUR.326883118&source=201-4&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        }
+      ]
+    },
+    {
+      "id": 1417515,
+      "key": "hotel:Barcelo_Raval",
+      "href": "http://sandbox.hotelscombined.com/api/2.0/hotel?apiKey=7B5041D1-29A6-491F-B3E0-57CA5FCD53CA&sessionID=testsession1&destination=place%3ABarcelona&checkin=2018-06-13&checkout=2018-06-14&rooms=1&responseOptions=destination%2Ctoprates&hotel=hotel:Barcelo_Raval",
+      "name": "Barcelo Raval",
+      "address": "Rambla del Raval, 17-21",
+      "latitude": 41.3789862,
+      "longitude": 2.1694994,
+      "distance": 1363,
+      "isWithinBoundary": true,
+      "starRating": 4,
+      "isSelfRated": false,
+      "lowestRate": 73.0,
+      "highestRate": 584.0,
+      "isGreatValue": false,
+      "numberOfProviders": 24,
+      "numberOfRates": 27,
+      "greenScore":9,
+      "rates": [
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 73.0,
+          "isCheapestRate": true,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 5,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.6622470.-263599102.0.EUR.1377424951&source=201-0&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 73.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 6,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.17969032.-263598942.0.EUR.1322384256&source=201-1&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 79.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0,
+            1
+          ],
+          "availableRooms": null,
+          "providerIndex": 7,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.47267691.-263598964.6.EUR.245719635&source=201-2&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 85.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0,
+            2
+          ],
+          "availableRooms": null,
+          "providerIndex": 8,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.39830055.-263599019.13.EUR.1033503290&source=201-3&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 584.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            1
+          ],
+          "availableRooms": null,
+          "providerIndex": 3,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.44401093.-263598934.253.EUR.816041295&source=201-4&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        }
+      ]
+    },
+    {
+      "id": 1196848,
+      "key": "hotel:Eurostars_Grand_Marina",
+      "href": "http://sandbox.hotelscombined.com/api/2.0/hotel?apiKey=7B5041D1-29A6-491F-B3E0-57CA5FCD53CA&sessionID=testsession1&destination=place%3ABarcelona&checkin=2018-06-13&checkout=2018-06-14&rooms=1&responseOptions=destination%2Ctoprates&hotel=hotel:Eurostars_Grand_Marina",
+      "name": "Eurostars Grand Marina",
+      "address": "Moll de Barcelona S/N",
+      "latitude": 41.3717041,
+      "longitude": 2.1809248,
+      "distance": 2257,
+      "isWithinBoundary": true,
+      "starRating": 5,
+      "isSelfRated": false,
+      "lowestRate": 76.0,
+      "highestRate": 249.0,
+      "isGreatValue": true,
+      "numberOfProviders": 24,
+      "numberOfRates": 24,
+      "greenScore":9,
+      "rates": [
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 80.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 9,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.4093756.-263599081.8.EUR.1362898476&source=201-0&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 76.0,
+          "isCheapestRate": true,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0
+          ],
+          "availableRooms": null,
+          "providerIndex": 10,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.37873190.-263599117.1.EUR.1466875091&source=201-1&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 76.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0
+          ],
+          "availableRooms": null,
+          "providerIndex": 11,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.17456536.-263598965.1.EUR.237776036&source=201-2&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 80.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            1
+          ],
+          "availableRooms": null,
+          "providerIndex": 12,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.14510136.-263599086.3.EUR.1407208229&source=201-3&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 249.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 4,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.6470717.-263598983.97.EUR.410559496&source=201-4&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        }
+      ]
+    },
+    {
+      "id": 2225021,
+      "key": "hotel:H10_Art_Gallery_Hotel",
+      "href": "http://sandbox.hotelscombined.com/api/2.0/hotel?apiKey=7B5041D1-29A6-491F-B3E0-57CA5FCD53CA&sessionID=testsession1&destination=place%3ABarcelona&checkin=2018-06-13&checkout=2018-06-14&rooms=1&responseOptions=destination%2Ctoprates&hotel=hotel:H10_Art_Gallery_Hotel",
+      "name": "H10 Art Gallery Hotel",
+      "address": "Enric Granados 62-64 ",
+      "latitude": 41.39192,
+      "longitude": 2.15714,
+      "distance": 1411,
+      "isWithinBoundary": true,
+      "starRating": 4,
+      "isSelfRated": false,
+      "lowestRate": 89.0,
+      "highestRate": 916.0,
+      "isGreatValue": false,
+      "numberOfProviders": 21,
+      "numberOfRates": 22,
+      "greenScore":9.1,
+      "rates": [
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 89.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            4
+          ],
+          "availableRooms": null,
+          "providerIndex": 13,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.39680366.-263598992.9.EUR.1134706010&source=201-0&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 89.0,
+          "isCheapestRate": true,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            4
+          ],
+          "availableRooms": null,
+          "providerIndex": 5,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.17620201.-263599106.17.EUR.932513049&source=201-1&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 89.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            4
+          ],
+          "availableRooms": null,
+          "providerIndex": 14,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.18013263.-263599077.9.EUR.811404052&source=201-2&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 93.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            2
+          ],
+          "availableRooms": null,
+          "providerIndex": 15,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.26149149.-263598933.10.EUR.1851678526&source=201-3&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 916.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            2
+          ],
+          "availableRooms": null,
+          "providerIndex": 16,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.28363276.-263598974.451.EUR.1633299725&source=201-4&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        }
+      ]
+    },
+    {
+      "id": 1153732,
+      "key": "hotel:Barcelo_Sants_Hotel",
+      "href": "http://sandbox.hotelscombined.com/api/2.0/hotel?apiKey=7B5041D1-29A6-491F-B3E0-57CA5FCD53CA&sessionID=testsession1&destination=place%3ABarcelona&checkin=2018-06-13&checkout=2018-06-14&rooms=1&responseOptions=destination%2Ctoprates&hotel=hotel:Barcelo_Sants_Hotel",
+      "name": "Barcelo Sants Hotel",
+      "address": "Plaza Dels Paisos Catalans s/n",
+      "latitude": 41.3789218,
+      "longitude": 2.1399576,
+      "distance": 3171,
+      "isWithinBoundary": true,
+      "starRating": 4,
+      "isSelfRated": false,
+      "lowestRate": 83.0,
+      "highestRate": 1268.0,
+      "isGreatValue": false,
+      "numberOfProviders": 21,
+      "numberOfRates": 22,
+      "greenScore":8.6,
+      "rates": [
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 83.0,
+          "isCheapestRate": true,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0,
+            2
+          ],
+          "availableRooms": null,
+          "providerIndex": 17,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.22834451.-263599126.5.EUR.1565995520&source=201-0&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 87.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 5,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.6622653.-263599102.15.EUR.1172385156&source=201-1&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 96.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            3
+          ],
+          "availableRooms": null,
+          "providerIndex": 13,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.39680230.-263599078.12.EUR.1081327270&source=201-2&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 97.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0
+          ],
+          "availableRooms": null,
+          "providerIndex": 8,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.39830940.-263599037.26.EUR.829363511&source=201-3&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 1268.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            3
+          ],
+          "availableRooms": null,
+          "providerIndex": 3,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.36872658.-263598934.395.EUR.1291358720&source=201-4&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        }
+      ]
+    },
+    {
+      "id": 1696559,
+      "key": "hotel:KK_Hotel_Picasso",
+      "href": "http://sandbox.hotelscombined.com/api/2.0/hotel?apiKey=7B5041D1-29A6-491F-B3E0-57CA5FCD53CA&sessionID=testsession1&destination=place%3ABarcelona&checkin=2018-06-13&checkout=2018-06-14&rooms=1&responseOptions=destination%2Ctoprates&hotel=hotel:KK_Hotel_Picasso",
+      "name": "K+K Hotel Picasso",
+      "address": "Passeig de Picasso, 26-30",
+      "latitude": 41.3867659,
+      "longitude": 2.1838584,
+      "distance": 1600,
+      "isWithinBoundary": true,
+      "starRating": 4,
+      "isSelfRated": false,
+      "lowestRate": 83.0,
+      "highestRate": 847.0,
+      "isGreatValue": false,
+      "numberOfProviders": 17,
+      "numberOfRates": 18,
+      "greenScore":7.3,
+      "rates": [
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 83.0,
+          "isCheapestRate": true,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0,
+            2
+          ],
+          "availableRooms": null,
+          "providerIndex": 11,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.29017144.-263599005.5.EUR.1205360459&source=201-0&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 92.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            3
+          ],
+          "availableRooms": null,
+          "providerIndex": 18,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.10750623.-263598940.20.EUR.670141737&source=201-1&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 102.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 19,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.25568034.-263599074.31.EUR.1407075375&source=201-2&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 99.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0,
+            1
+          ],
+          "availableRooms": null,
+          "providerIndex": 20,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.20233613.-263599114.14.EUR.946653404&source=201-3&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 847.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0,
+            2
+          ],
+          "availableRooms": null,
+          "providerIndex": 16,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.28363208.-263598974.415.EUR.1432334316&source=201-4&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        }
+      ]
+    },
+    {
+      "id": 1199768,
+      "key": "hotel:H10_Marina_Barcelona_Hotel",
+      "href": "http://sandbox.hotelscombined.com/api/2.0/hotel?apiKey=7B5041D1-29A6-491F-B3E0-57CA5FCD53CA&sessionID=testsession1&destination=place%3ABarcelona&checkin=2018-06-13&checkout=2018-06-14&rooms=1&responseOptions=destination%2Ctoprates&hotel=hotel:H10_Marina_Barcelona_Hotel",
+      "name": "H10 Marina Barcelona Hotel",
+      "address": "Avenida Bogatell, 64-68",
+      "latitude": 41.3929001,
+      "longitude": 2.1924575,
+      "distance": 2292,
+      "isWithinBoundary": true,
+      "starRating": 4,
+      "isSelfRated": false,
+      "lowestRate": 73.0,
+      "highestRate": 468.0,
+      "isGreatValue": false,
+      "numberOfProviders": 19,
+      "numberOfRates": 20,
+      "greenScore":8.2,
+      "rates": [
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 73.0,
+          "isCheapestRate": true,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 8,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.39830219.-263599016.0.EUR.173083161&source=201-0&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 75.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            2
+          ],
+          "availableRooms": null,
+          "providerIndex": 9,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.4093746.-263599081.2.EUR.1855571713&source=201-1&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 76.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0
+          ],
+          "availableRooms": null,
+          "providerIndex": 11,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.17456933.-263599130.1.EUR.631957726&source=201-2&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 76.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0
+          ],
+          "availableRooms": null,
+          "providerIndex": 1,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.13952276.-263598951.1.EUR.396864909&source=201-3&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 468.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 21,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.36226960.-263599043.216.EUR.751171883&source=201-4&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        }
+      ]
+    },
+    {
+      "id": 3049230,
+      "key": "hotel:OD_Barcelona",
+      "href": "http://sandbox.hotelscombined.com/api/2.0/hotel?apiKey=7B5041D1-29A6-491F-B3E0-57CA5FCD53CA&sessionID=testsession1&destination=place%3ABarcelona&checkin=2018-06-13&checkout=2018-06-14&rooms=1&responseOptions=destination%2Ctoprates&hotel=hotel:OD_Barcelona",
+      "name": "OD Barcelona",
+      "address": "Carrer d'Arago 300",
+      "latitude": 41.3941124,
+      "longitude": 2.167454,
+      "distance": 949,
+      "isWithinBoundary": true,
+      "starRating": 5,
+      "isSelfRated": false,
+      "lowestRate": 73.0,
+      "highestRate": 230.0,
+      "isGreatValue": true,
+      "numberOfProviders": 7,
+      "numberOfRates": 7,
+      "greenScore":5,
+      "rates": [
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 73.0,
+          "isCheapestRate": true,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 8,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.45666046.-263599039.0.EUR.1002798144&source=201-0&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 84.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            1
+          ],
+          "availableRooms": null,
+          "providerIndex": 22,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.49566023.-263599124.11.EUR.636226217&source=201-1&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 84.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            1
+          ],
+          "availableRooms": null,
+          "providerIndex": 7,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.47267360.-263598954.11.EUR.874589755&source=201-2&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 102.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 23,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.41604902.-263598946.16.EUR.1939618360&source=201-3&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 230.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0,
+            2
+          ],
+          "availableRooms": null,
+          "providerIndex": 24,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.42762521.-263598945.83.EUR.178980018&source=201-4&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        }
+      ]
+    },
+    {
+      "id": 1218825,
+      "key": "hotel:Occidental_Atenea_Mar_Adults_only",
+      "href": "http://sandbox.hotelscombined.com/api/2.0/hotel?apiKey=7B5041D1-29A6-491F-B3E0-57CA5FCD53CA&sessionID=testsession1&destination=place%3ABarcelona&checkin=2018-06-13&checkout=2018-06-14&rooms=1&responseOptions=destination%2Ctoprates&hotel=hotel:Occidental_Atenea_Mar_Adults_only",
+      "name": "Occidental Atenea Mar - Adults only",
+      "address": "Paseo Garcia Faria 37-47",
+      "latitude": 41.4020587,
+      "longitude": 2.2114653,
+      "distance": 4522,
+      "isWithinBoundary": true,
+      "starRating": 4,
+      "isSelfRated": false,
+      "lowestRate": 79.0,
+      "highestRate": 949.0,
+      "isGreatValue": false,
+      "numberOfProviders": 21,
+      "numberOfRates": 21,
+      "greenScore":6.6,
+      "rates": [
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 79.0,
+          "isCheapestRate": true,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0,
+            1
+          ],
+          "availableRooms": null,
+          "providerIndex": 8,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.39830226.-263599016.6.EUR.1121421229&source=201-0&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 86.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 11,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.17456940.-263599130.7.EUR.1938101550&source=201-1&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 86.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 1,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.13952462.-263598999.7.EUR.1401490856&source=201-2&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 103.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            4
+          ],
+          "availableRooms": null,
+          "providerIndex": 22,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.38304505.-263598952.33.EUR.158111338&source=201-3&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 949.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            3
+          ],
+          "availableRooms": null,
+          "providerIndex": 3,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.44400939.-263598934.294.EUR.42505806&source=201-4&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        }
+      ]
+    },
+    {
+      "id": 1199602,
+      "key": "hotel:Ronda_Lesseps_Hotel",
+      "href": "http://sandbox.hotelscombined.com/api/2.0/hotel?apiKey=7B5041D1-29A6-491F-B3E0-57CA5FCD53CA&sessionID=testsession1&destination=place%3ABarcelona&checkin=2018-06-13&checkout=2018-06-14&rooms=1&responseOptions=destination%2Ctoprates&hotel=hotel:Ronda_Lesseps_Hotel",
+      "name": "Ronda Lesseps Hotel",
+      "address": "Calle de Ballester 77",
+      "latitude": 41.408641,
+      "longitude": 2.1478143,
+      "distance": 3044,
+      "isWithinBoundary": true,
+      "starRating": 4,
+      "isSelfRated": false,
+      "lowestRate": 76.0,
+      "highestRate": 2680.0,
+      "isGreatValue": false,
+      "numberOfProviders": 21,
+      "numberOfRates": 21,
+      "greenScore":7,
+      "rates": [
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 76.0,
+          "isCheapestRate": true,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0
+          ],
+          "availableRooms": null,
+          "providerIndex": 9,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.11229502.-263598972.1.EUR.912131595&source=201-0&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 76.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0
+          ],
+          "availableRooms": null,
+          "providerIndex": 7,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.47267854.-263598967.1.EUR.1662193710&source=201-1&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 86.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 15,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.26149235.-263598996.7.EUR.851419595&source=201-2&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 96.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            3
+          ],
+          "availableRooms": null,
+          "providerIndex": 8,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.39830473.-263599015.12.EUR.195903053&source=201-3&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 2680.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            2
+          ],
+          "availableRooms": null,
+          "providerIndex": 3,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.36872905.-263598934.549.EUR.1181090342&source=201-4&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        }
+      ]
+    },
+    {
+      "id": 1043405,
+      "key": "hotel:Hotel_Meson_Castilla_Atiram",
+      "href": "http://sandbox.hotelscombined.com/api/2.0/hotel?apiKey=7B5041D1-29A6-491F-B3E0-57CA5FCD53CA&sessionID=testsession1&destination=place%3ABarcelona&checkin=2018-06-13&checkout=2018-06-14&rooms=1&responseOptions=destination%2Ctoprates&hotel=hotel:Hotel_Meson_Castilla_Atiram",
+      "name": "Hotel Meson Castilla Atiram",
+      "address": "C. Valldonzella, 5",
+      "latitude": 41.3846664,
+      "longitude": 2.1664606,
+      "distance": 651,
+      "isWithinBoundary": true,
+      "starRating": 2,
+      "isSelfRated": false,
+      "lowestRate": 93.0,
+      "highestRate": 828.0,
+      "isGreatValue": false,
+      "numberOfProviders": 19,
+      "numberOfRates": 19,
+      "greenScore":7.1,
+      "rates": [
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 93.0,
+          "isCheapestRate": true,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0,
+            1
+          ],
+          "availableRooms": null,
+          "providerIndex": 6,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.17969061.-263598942.22.EUR.8586048&source=201-0&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 96.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            3
+          ],
+          "availableRooms": null,
+          "providerIndex": 19,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.28358954.-263599074.12.EUR.529046915&source=201-1&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 95.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 9,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.21176832.-263599097.24.EUR.265981687&source=201-2&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 99.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0,
+            1
+          ],
+          "availableRooms": null,
+          "providerIndex": 5,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.17620190.-263599106.14.EUR.65481141&source=201-3&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 828.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            2
+          ],
+          "availableRooms": null,
+          "providerIndex": 10,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.30015996.-263599117.406.EUR.2124930133&source=201-4&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        }
+      ]
+    },
+    {
+      "id": 1043159,
+      "key": "hotel:Alba_Hotel_Barcelona",
+      "href": "http://sandbox.hotelscombined.com/api/2.0/hotel?apiKey=7B5041D1-29A6-491F-B3E0-57CA5FCD53CA&sessionID=testsession1&destination=place%3ABarcelona&checkin=2018-06-13&checkout=2018-06-14&rooms=1&responseOptions=destination%2Ctoprates&hotel=hotel:Alba_Hotel_Barcelona",
+      "name": "Alba Hotel Barcelona",
+      "address": "Calle Hospital 83",
+      "latitude": 41.3802642,
+      "longitude": 2.1700465,
+      "distance": 1159,
+      "isWithinBoundary": true,
+      "starRating": 3,
+      "isSelfRated": false,
+      "lowestRate": 89.0,
+      "highestRate": 491.0,
+      "isGreatValue": false,
+      "numberOfProviders": 8,
+      "numberOfRates": 8,
+      "greenScore":6.8,
+      "rates": [
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 89.0,
+          "isCheapestRate": true,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            4
+          ],
+          "availableRooms": null,
+          "providerIndex": 19,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.34411596.-263599074.9.EUR.1194436174&source=201-0&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 102.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 17,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.34179120.-263598973.16.EUR.1999278757&source=201-1&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 119.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            4
+          ],
+          "availableRooms": null,
+          "providerIndex": 8,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.39830996.-263599034.25.EUR.562042238&source=201-2&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 171.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0,
+            2
+          ],
+          "availableRooms": null,
+          "providerIndex": 23,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.34382992.-263598943.54.EUR.1227543183&source=201-3&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 491.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            1
+          ],
+          "availableRooms": null,
+          "providerIndex": 21,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.36221485.-263599026.230.EUR.913115835&source=201-4&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        }
+      ]
+    },
+    {
+      "id": 1150073,
+      "key": "hotel:H10_Casanova",
+      "href": "http://sandbox.hotelscombined.com/api/2.0/hotel?apiKey=7B5041D1-29A6-491F-B3E0-57CA5FCD53CA&sessionID=testsession1&destination=place%3ABarcelona&checkin=2018-06-13&checkout=2018-06-14&rooms=1&responseOptions=destination%2Ctoprates&hotel=hotel:H10_Casanova",
+      "name": "H10 Casanova",
+      "address": "Gran Via de les Corts Catalanes 559",
+      "latitude": 41.3841995,
+      "longitude": 2.1607737,
+      "distance": 933,
+      "isWithinBoundary": true,
+      "starRating": 4,
+      "isSelfRated": false,
+      "lowestRate": 86.0,
+      "highestRate": 510.0,
+      "isGreatValue": false,
+      "numberOfProviders": 17,
+      "numberOfRates": 18,
+      "greenScore":4.7,
+      "rates": [
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 86.0,
+          "isCheapestRate": true,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 18,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.5810220.-263599121.7.EUR.389995006&source=201-0&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 86.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 11,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.17456755.-263598970.7.EUR.671567455&source=201-1&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 96.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            3
+          ],
+          "availableRooms": null,
+          "providerIndex": 8,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.39830177.-263599011.12.EUR.1778375670&source=201-2&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 93.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0,
+            1
+          ],
+          "availableRooms": null,
+          "providerIndex": 20,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.41635368.-263598947.22.EUR.1818372176&source=201-3&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 510.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            1
+          ],
+          "availableRooms": null,
+          "providerIndex": 10,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.33795093.-263599117.471.EUR.1175825525&source=201-4&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        }
+      ]
+    },
+    {
+      "id": 1251733,
+      "key": "hotel:H10_Montcada_Hotel",
+      "href": "http://sandbox.hotelscombined.com/api/2.0/hotel?apiKey=7B5041D1-29A6-491F-B3E0-57CA5FCD53CA&sessionID=testsession1&destination=place%3ABarcelona&checkin=2018-06-13&checkout=2018-06-14&rooms=1&responseOptions=destination%2Ctoprates&hotel=hotel:H10_Montcada_Hotel",
+      "name": "H10 Montcada Hotel",
+      "address": "Via Laietana 24",
+      "latitude": 41.384288,
+      "longitude": 2.178339,
+      "distance": 935,
+      "isWithinBoundary": true,
+      "starRating": 4,
+      "isSelfRated": false,
+      "lowestRate": 75.0,
+      "highestRate": 589.0,
+      "isGreatValue": false,
+      "numberOfProviders": 22,
+      "numberOfRates": 24,
+      "greenScore":8.3,
+      "rates": [
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 77.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            3
+          ],
+          "availableRooms": null,
+          "providerIndex": 13,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.48858184.-263599079.4.EUR.1372172587&source=201-0&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 75.0,
+          "isCheapestRate": true,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            2
+          ],
+          "availableRooms": null,
+          "providerIndex": 2,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.20671986.-263598938.2.EUR.1866273161&source=201-1&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 84.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            1
+          ],
+          "availableRooms": null,
+          "providerIndex": 1,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.13952341.-263599128.11.EUR.1253400648&source=201-2&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 93.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            2
+          ],
+          "availableRooms": null,
+          "providerIndex": 8,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.39836445.-263599020.10.EUR.1937250280&source=201-3&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 589.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            4
+          ],
+          "availableRooms": null,
+          "providerIndex": 10,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.31691429.-263599117.282.EUR.791458471&source=201-4&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        }
+      ]
+    },
+    {
+      "id": 1043260,
+      "key": "hotel:H10_Universitat_Hotel",
+      "href": "http://sandbox.hotelscombined.com/api/2.0/hotel?apiKey=7B5041D1-29A6-491F-B3E0-57CA5FCD53CA&sessionID=testsession1&destination=place%3ABarcelona&checkin=2018-06-13&checkout=2018-06-14&rooms=1&responseOptions=destination%2Ctoprates&hotel=hotel:H10_Universitat_Hotel",
+      "name": "H10 Universitat Hotel",
+      "address": "Ronda Universitat, 21",
+      "latitude": 41.3868737,
+      "longitude": 2.1666924,
+      "distance": 293,
+      "isWithinBoundary": true,
+      "starRating": 4,
+      "isSelfRated": false,
+      "lowestRate": 73.0,
+      "highestRate": 351.0,
+      "isGreatValue": false,
+      "numberOfProviders": 21,
+      "numberOfRates": 22,
+      "greenScore":5.7,
+      "rates": [
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 76.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0
+          ],
+          "availableRooms": null,
+          "providerIndex": 18,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.3030101.-263599113.1.EUR.875624643&source=201-0&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 73.0,
+          "isCheapestRate": true,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 15,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.26149045.-263598932.0.EUR.1677352199&source=201-1&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 83.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0,
+            2
+          ],
+          "availableRooms": null,
+          "providerIndex": 13,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.48858185.-263599079.5.EUR.228342735&source=201-2&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 80.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            1
+          ],
+          "availableRooms": null,
+          "providerIndex": 9,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.4093750.-263599081.3.EUR.920565345&source=201-3&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 351.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 21,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.36223431.-263599043.152.EUR.1022392138&source=201-4&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        }
+      ]
+    },
+    {
+      "id": 1535161,
+      "key": "hotel:Barna_House_BB",
+      "href": "http://sandbox.hotelscombined.com/api/2.0/hotel?apiKey=7B5041D1-29A6-491F-B3E0-57CA5FCD53CA&sessionID=testsession1&destination=place%3ABarcelona&checkin=2018-06-13&checkout=2018-06-14&rooms=1&responseOptions=destination%2Ctoprates&hotel=hotel:Barna_House_BB",
+      "name": "Barna House B&B",
+      "address": "Bailen 188, Principal 1",
+      "latitude": 41.401041,
+      "longitude": 2.165303,
+      "distance": 2028,
+      "isWithinBoundary": true,
+      "starRating": 0,
+      "isSelfRated": false,
+      "lowestRate": 73.0,
+      "highestRate": 289.0,
+      "isGreatValue": false,
+      "numberOfProviders": 4,
+      "numberOfRates": 4,
+      "greenScore":9,
+      "rates": [
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 73.0,
+          "isCheapestRate": true,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 23,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.49746894.-263598946.0.EUR.1611243204&source=201-0&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 105.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            2
+          ],
+          "availableRooms": null,
+          "providerIndex": 19,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.49828333.-263599073.35.EUR.487987579&source=201-1&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 119.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            4
+          ],
+          "availableRooms": null,
+          "providerIndex": 8,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.39830649.-263599031.25.EUR.1066633130&source=201-2&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 289.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0,
+            2
+          ],
+          "availableRooms": null,
+          "providerIndex": 4,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.23923972.-263598963.118.EUR.1686435843&source=201-3&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        }
+      ]
+    },
+    {
+      "id": 1852103,
+      "key": "hotel:Barna_House_Apartments",
+      "href": "http://sandbox.hotelscombined.com/api/2.0/hotel?apiKey=7B5041D1-29A6-491F-B3E0-57CA5FCD53CA&sessionID=testsession1&destination=place%3ABarcelona&checkin=2018-06-13&checkout=2018-06-14&rooms=1&responseOptions=destination%2Ctoprates&hotel=hotel:Barna_House_Apartments",
+      "name": "Barna House Apartments",
+      "address": "Marina, 366",
+      "latitude": 41.4082824,
+      "longitude": 2.1696584,
+      "distance": 3103,
+      "isWithinBoundary": true,
+      "starRating": 4,
+      "isSelfRated": false,
+      "lowestRate": 75.0,
+      "highestRate": 347.0,
+      "isGreatValue": false,
+      "numberOfProviders": 13,
+      "numberOfRates": 14,
+      "greenScore":9.5,
+      "rates": [
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 75.0,
+          "isCheapestRate": true,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            2
+          ],
+          "availableRooms": null,
+          "providerIndex": 9,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.24039487.-263599084.2.EUR.848022006&source=201-0&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 79.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0,
+            1
+          ],
+          "availableRooms": null,
+          "providerIndex": 11,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.29017145.-263599005.6.EUR.1282792293&source=201-1&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 89.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            4
+          ],
+          "availableRooms": null,
+          "providerIndex": 8,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.39830754.-263599022.17.EUR.256604506&source=201-2&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 92.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            3
+          ],
+          "availableRooms": null,
+          "providerIndex": 15,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.26149332.-263598930.20.EUR.1275665110&source=201-3&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 347.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0
+          ],
+          "availableRooms": null,
+          "providerIndex": 21,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.36222655.-263599026.301.EUR.414478818&source=201-4&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        }
+      ]
+    },
+    {
+      "id": 1251773,
+      "key": "hotel:Expo_Hotel_Barcelona",
+      "href": "http://sandbox.hotelscombined.com/api/2.0/hotel?apiKey=7B5041D1-29A6-491F-B3E0-57CA5FCD53CA&sessionID=testsession1&destination=place%3ABarcelona&checkin=2018-06-13&checkout=2018-06-14&rooms=1&responseOptions=destination%2Ctoprates&hotel=hotel:Expo_Hotel_Barcelona",
+      "name": "Expo Hotel Barcelona",
+      "address": "Mallorca 1-23",
+      "latitude": 41.378686,
+      "longitude": 2.142449,
+      "distance": 2995,
+      "isWithinBoundary": true,
+      "starRating": 4,
+      "isSelfRated": false,
+      "lowestRate": 77.0,
+      "highestRate": 530.0,
+      "isGreatValue": false,
+      "numberOfProviders": 23,
+      "numberOfRates": 24,
+      "greenScore":8.8,
+      "rates": [
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 77.0,
+          "isCheapestRate": true,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            3
+          ],
+          "availableRooms": null,
+          "providerIndex": 8,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.39830459.-263599015.4.EUR.2024202846&source=201-0&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 80.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            1
+          ],
+          "availableRooms": null,
+          "providerIndex": 2,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.21098934.-263598938.3.EUR.1099082365&source=201-1&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 86.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 13,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.39680415.-263598936.7.EUR.2014872817&source=201-2&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 85.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0,
+            2
+          ],
+          "availableRooms": null,
+          "providerIndex": 6,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.23046973.-263598987.13.EUR.411316770&source=201-3&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 530.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            4
+          ],
+          "availableRooms": null,
+          "providerIndex": 21,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.36227268.-263599043.251.EUR.1579172042&source=201-4&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        }
+      ]
+    },
+    {
+      "id": 1149566,
+      "key": "hotel:Royal_Ramblas_Hotel",
+      "href": "http://sandbox.hotelscombined.com/api/2.0/hotel?apiKey=7B5041D1-29A6-491F-B3E0-57CA5FCD53CA&sessionID=testsession1&destination=place%3ABarcelona&checkin=2018-06-13&checkout=2018-06-14&rooms=1&responseOptions=destination%2Ctoprates&hotel=hotel:Royal_Ramblas_Hotel",
+      "name": "Royal Ramblas Hotel",
+      "address": "Las Ramblas, 117",
+      "latitude": 41.384303,
+      "longitude": 2.170518,
+      "distance": 528,
+      "isWithinBoundary": true,
+      "starRating": 4,
+      "isSelfRated": false,
+      "lowestRate": 80.0,
+      "highestRate": 459.0,
+      "isGreatValue": false,
+      "numberOfProviders": 19,
+      "numberOfRates": 21,
+      "greenScore":7.5,
+      "rates": [
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 80.0,
+          "isCheapestRate": true,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            1
+          ],
+          "availableRooms": null,
+          "providerIndex": 11,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.17456539.-263598965.3.EUR.1289631855&source=201-0&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 87.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 9,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.4093772.-263599081.15.EUR.2009325816&source=201-1&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 86.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 1,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.13952396.-263598956.7.EUR.1521442211&source=201-2&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 96.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            3
+          ],
+          "availableRooms": null,
+          "providerIndex": 8,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.39829888.-263599009.12.EUR.195252414&source=201-3&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 459.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            3
+          ],
+          "availableRooms": null,
+          "providerIndex": 10,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.30016011.-263599117.416.EUR.2126090037&source=201-4&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        }
+      ]
+    },
+    {
+      "id": 1251731,
+      "key": "hotel:Gran_Hotel_Torre_Catalunya",
+      "href": "http://sandbox.hotelscombined.com/api/2.0/hotel?apiKey=7B5041D1-29A6-491F-B3E0-57CA5FCD53CA&sessionID=testsession1&destination=place%3ABarcelona&checkin=2018-06-13&checkout=2018-06-14&rooms=1&responseOptions=destination%2Ctoprates&hotel=hotel:Gran_Hotel_Torre_Catalunya",
+      "name": "Gran Hotel Torre Catalunya",
+      "address": "Avenida Roma 2-4",
+      "latitude": 41.37976,
+      "longitude": 2.14223,
+      "distance": 2825,
+      "isWithinBoundary": true,
+      "starRating": 4,
+      "isSelfRated": false,
+      "lowestRate": 85.0,
+      "highestRate": 508.0,
+      "isGreatValue": false,
+      "numberOfProviders": 24,
+      "numberOfRates": 25,
+      "greenScore":5.8,
+      "rates": [
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 85.0,
+          "isCheapestRate": true,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0,
+            2
+          ],
+          "availableRooms": null,
+          "providerIndex": 5,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.6622651.-263599102.13.EUR.1039121984&source=201-0&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 89.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            4
+          ],
+          "availableRooms": null,
+          "providerIndex": 11,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.17456961.-263599130.17.EUR.1153207608&source=201-1&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 93.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            2
+          ],
+          "availableRooms": null,
+          "providerIndex": 8,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.39830052.-263599019.10.EUR.375611910&source=201-2&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 92.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            3
+          ],
+          "availableRooms": null,
+          "providerIndex": 25,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.14911263.-263599030.20.EUR.1205243005&source=201-3&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 508.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0
+          ],
+          "availableRooms": null,
+          "providerIndex": 10,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.33795088.-263599117.469.EUR.1734776258&source=201-4&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        }
+      ]
+    },
+    {
+      "id": 1043289,
+      "key": "hotel:Hotel_Barcelona_Princess",
+      "href": "http://sandbox.hotelscombined.com/api/2.0/hotel?apiKey=7B5041D1-29A6-491F-B3E0-57CA5FCD53CA&sessionID=testsession1&destination=place%3ABarcelona&checkin=2018-06-13&checkout=2018-06-14&rooms=1&responseOptions=destination%2Ctoprates&hotel=hotel:Hotel_Barcelona_Princess",
+      "name": "Hotel Barcelona Princess",
+      "address": "Avenida Diagonal 1",
+      "latitude": 41.411481,
+      "longitude": 2.218444,
+      "distance": 4948,
+      "isWithinBoundary": true,
+      "starRating": 4,
+      "isSelfRated": false,
+      "lowestRate": 76.0,
+      "highestRate": 959.0,
+      "isGreatValue": false,
+      "numberOfProviders": 22,
+      "numberOfRates": 23,
+      "greenScore":8.6,
+      "rates": [
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 80.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 13,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.48858188.-263599079.8.EUR.2002363157&source=201-0&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 76.0,
+          "isCheapestRate": true,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0
+          ],
+          "availableRooms": null,
+          "providerIndex": 11,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.29017017.-263599000.1.EUR.846165049&source=201-1&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 80.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 1,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.13952519.-263599010.8.EUR.1370768577&source=201-2&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 89.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            4
+          ],
+          "availableRooms": null,
+          "providerIndex": 14,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.14778747.-263599085.9.EUR.427840956&source=201-3&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 959.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0
+          ],
+          "availableRooms": null,
+          "providerIndex": 10,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.33467252.-263599117.477.EUR.345867610&source=201-4&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        }
+      ]
+    },
+    {
+      "id": 1213691,
+      "key": "hotel:Tryp_Barcelona_Apolo_Hotel",
+      "href": "http://sandbox.hotelscombined.com/api/2.0/hotel?apiKey=7B5041D1-29A6-491F-B3E0-57CA5FCD53CA&sessionID=testsession1&destination=place%3ABarcelona&checkin=2018-06-13&checkout=2018-06-14&rooms=1&responseOptions=destination%2Ctoprates&hotel=hotel:Tryp_Barcelona_Apolo_Hotel",
+      "name": "Tryp Barcelona Apolo Hotel",
+      "address": "Av. Paral.lel 57-59",
+      "latitude": 41.374872,
+      "longitude": 2.170762,
+      "distance": 1828,
+      "isWithinBoundary": true,
+      "starRating": 4,
+      "isSelfRated": false,
+      "lowestRate": 75.0,
+      "highestRate": 436.0,
+      "isGreatValue": false,
+      "numberOfProviders": 21,
+      "numberOfRates": 21,
+      "greenScore":6.1,
+      "rates": [
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 75.0,
+          "isCheapestRate": true,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            2
+          ],
+          "availableRooms": null,
+          "providerIndex": 1,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.13952277.-263598951.2.EUR.506366929&source=201-0&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 80.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 24,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.13629621.-263599109.8.EUR.1820429605&source=201-1&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 85.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0,
+            2
+          ],
+          "availableRooms": null,
+          "providerIndex": 3,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.38562078.-263598934.13.EUR.827346815&source=201-2&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 87.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 5,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.23080568.-263599108.15.EUR.1112637130&source=201-3&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 436.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0,
+            2
+          ],
+          "availableRooms": null,
+          "providerIndex": 23,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.13488717.-263599082.199.EUR.1239854241&source=201-4&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        }
+      ]
+    },
+    {
+      "id": 1842786,
+      "key": "hotel:Travelodge_Barcelona_Poblenou",
+      "href": "http://sandbox.hotelscombined.com/api/2.0/hotel?apiKey=7B5041D1-29A6-491F-B3E0-57CA5FCD53CA&sessionID=testsession1&destination=place%3ABarcelona&checkin=2018-06-13&checkout=2018-06-14&rooms=1&responseOptions=destination%2Ctoprates&hotel=hotel:Travelodge_Barcelona_Poblenou",
+      "name": "Travelodge Barcelona Poblenou",
+      "address": "Carrer de Llacuna 32",
+      "latitude": 41.3997052,
+      "longitude": 2.2008788,
+      "distance": 3289,
+      "isWithinBoundary": true,
+      "starRating": 1,
+      "isSelfRated": false,
+      "lowestRate": 76.0,
+      "highestRate": 1021.0,
+      "isGreatValue": false,
+      "numberOfProviders": 18,
+      "numberOfRates": 19,
+      "greenScore":5.2,
+      "rates": [
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 76.0,
+          "isCheapestRate": true,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0
+          ],
+          "availableRooms": null,
+          "providerIndex": 17,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.44325842.-263599098.1.EUR.1333912573&source=201-0&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 80.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            1
+          ],
+          "availableRooms": null,
+          "providerIndex": 3,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.37276708.-263598934.3.EUR.940836803&source=201-1&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 80.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 11,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.29017147.-263599005.8.EUR.68128851&source=201-2&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 93.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            2
+          ],
+          "availableRooms": null,
+          "providerIndex": 19,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.47231103.-263598980.10.EUR.27133783&source=201-3&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 1021.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            1
+          ],
+          "availableRooms": null,
+          "providerIndex": 10,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.37225747.-263599117.510.EUR.723236065&source=201-4&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        }
+      ]
+    },
+    {
+      "id": 1251775,
+      "key": "hotel:Hotel_Jazz_Barcelona",
+      "href": "http://sandbox.hotelscombined.com/api/2.0/hotel?apiKey=7B5041D1-29A6-491F-B3E0-57CA5FCD53CA&sessionID=testsession1&destination=place%3ABarcelona&checkin=2018-06-13&checkout=2018-06-14&rooms=1&responseOptions=destination%2Ctoprates&hotel=hotel:Hotel_Jazz_Barcelona",
+      "name": "Hotel Jazz Barcelona",
+      "address": "Pelai 3",
+      "latitude": 41.385841,
+      "longitude": 2.165987,
+      "distance": 469,
+      "isWithinBoundary": true,
+      "starRating": 3,
+      "isSelfRated": false,
+      "lowestRate": 75.0,
+      "highestRate": 704.0,
+      "isGreatValue": false,
+      "numberOfProviders": 24,
+      "numberOfRates": 24,
+      "greenScore":6.7,
+      "rates": [
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 75.0,
+          "isCheapestRate": true,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            2
+          ],
+          "availableRooms": null,
+          "providerIndex": 18,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.3030102.-263599113.2.EUR.1018166421&source=201-0&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 79.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0,
+            1
+          ],
+          "availableRooms": null,
+          "providerIndex": 0,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.14462055.-263599127.6.EUR.1395549378&source=201-1&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 86.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 13,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.48858187.-263599079.7.EUR.90414949&source=201-2&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 102.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 8,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.39829966.-263599007.31.EUR.1192727556&source=201-3&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 704.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 10,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.30015890.-263599117.339.EUR.677317569&source=201-4&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        }
+      ]
+    },
+    {
+      "id": 1510123,
+      "key": "hotel:W_Hotel_Barcelona",
+      "href": "http://sandbox.hotelscombined.com/api/2.0/hotel?apiKey=7B5041D1-29A6-491F-B3E0-57CA5FCD53CA&sessionID=testsession1&destination=place%3ABarcelona&checkin=2018-06-13&checkout=2018-06-14&rooms=1&responseOptions=destination%2Ctoprates&hotel=hotel:W_Hotel_Barcelona",
+      "name": "W Hotel Barcelona",
+      "address": "Placa de la Rosa dels Vents 1",
+      "latitude": 41.368443,
+      "longitude": 2.189798,
+      "distance": 3217,
+      "isWithinBoundary": true,
+      "starRating": 5,
+      "isSelfRated": false,
+      "lowestRate": 73.0,
+      "highestRate": 704.0,
+      "isGreatValue": true,
+      "numberOfProviders": 23,
+      "numberOfRates": 24,
+      "greenScore":4.8,
+      "rates": [
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 75.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            2
+          ],
+          "availableRooms": null,
+          "providerIndex": 22,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.39008115.-263598952.2.EUR.1945036885&source=201-0&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 73.0,
+          "isCheapestRate": true,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 2,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.25560358.-263598958.0.EUR.1171902628&source=201-1&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 77.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            3
+          ],
+          "availableRooms": null,
+          "providerIndex": 11,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.17456642.-263598966.4.EUR.338545484&source=201-2&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 79.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [
+            0,
+            1
+          ],
+          "availableRooms": null,
+          "providerIndex": 13,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.39680414.-263598936.6.EUR.363203733&source=201-3&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        },
+        {
+          "roomName": "Nice Room with a View",
+          "totalRate": 704.0,
+          "isCheapestRate": false,
+          "hasFreeCancellation": null,
+          "canPayLater": false,
+          "inclusions": [],
+          "availableRooms": null,
+          "providerIndex": 16,
+          "isDeprioritisedForExcludedCharges": false,
+          "bookUri": "/ProviderRedirect.ashx?key=0.12106212.-263598974.341.EUR.1731515517&source=201-4&a_aid=187186&brandID=545095",
+          "isBundledRate": false
+        }
+      ]
+    }
+  ]
